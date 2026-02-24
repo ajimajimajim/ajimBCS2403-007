@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KMB Bus Arrival - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container home-container">
+        <h1 class="main-title">🚌 KMB Bus Arrival Prediction</h1>
+        
+        <div class="dashboard">
+            <div class="dashboard-card" onclick="window.location.href='browse-stops.html'">
+                <div class="card-icon">🔍</div>
+                <h2>Browse All Stops</h2>
+                <p>Search and explore all KMB bus stops by name or browse the complete list</p>
+                <button class="card-btn">Browse Stops →</button>
+            </div>
+
+            <div class="dashboard-card" onclick="window.location.href='favorites.html'">
+                <div class="card-icon">⭐</div>
+                <h2>Favorite Stops</h2>
+                <p>View and manage your saved favorite stops for quick access</p>
+                <button class="card-btn">View Favorites →</button>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>About This App</h3>
+            <p>This application provides real-time arrival predictions for KMB buses in Hong Kong. 
+            Select an option above to get started.</p>
+            <p class="small-note">Data source: data.etabus.gov.hk</p>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

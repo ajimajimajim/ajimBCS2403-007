@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Bus Stops - KMB Arrival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-with-home">
+            <h1>🔍 Browse Bus Stops</h1>
+            <button class="home-btn" onclick="window.location.href='index.html'">🏠 Home</button>
+        </div>
+        
+        <nav>
+            <a href="browse-stops.html" class="active">Browse Stops</a> |
+            <a href="favorites.html">My Favorite Stops</a>
+        </nav>
+
+        <div class="search-section">
+            <h2>Search by Stop Name</h2>
+            <p>Start typing a stop name (e.g., "Prince Edward", "Mong Kok", "Tsim Sha Tsui")</p>
+            <input type="text" id="stopSearchInput" placeholder="Enter stop name..." autocomplete="off">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div class="or-divider">- OR -</div>
+
+        <div class="all-stops-section">
+            <h2>📋 All Stops</h2>
+            <p>Click on any stop to see arrival times</p>
+            <div id="allStopsList" class="stops-list">
+                <!-- List of stops will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Arrival Results Area (Initially Hidden) -->
+        <div id="arrivalResultsArea" style="display: none;">
+            <div class="results-header">
+                <h2>⏱️ Arrival Times</h2>
+                <button id="backToBrowseBtn" class="small-btn">← Back to Browse</button>
+            </div>
+            <div id="selectedStopInfo"></div>
+            <div id="loading" class="loading-spinner" style="display: none;">Loading arrivals...</div>
+            <div id="errorMessage" class="error"></div>
+            <div id="results"></div>
+            <div class="favorite-action">
+                <button id="saveToFavoritesBtn" class="favorite-save-btn">⭐ Save this Stop to Favorites</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

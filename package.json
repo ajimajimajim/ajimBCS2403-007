@@ -1,0 +1,16 @@
+{
+  "name": "kmb-eta-predictor",
+  "version": "1.0.0",
+  "description": "\"An Electron app for KMB arrival prediction\"",
+  "license": "ISC",
+  "author": "ajim",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^40.6.0"
+  },
+  "devDependencies": {}
+}

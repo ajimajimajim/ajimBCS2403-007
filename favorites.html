@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Stops - KMB Arrival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-with-home">
+            <h1>⭐ My Favorite Stops</h1>
+            <button class="home-btn" onclick="window.location.href='index.html'">🏠 Home</button>
+        </div>
+        
+        <nav>
+            <a href="browse-stops.html">Browse Stops</a> |
+            <a href="favorites.html" class="active">My Favorite Stops</a>
+        </nav>
+
+        <div class="favorites-section">
+            <h2>Add a New Favorite</h2>
+            <p>First, <a href="browse-stops.html">browse for a stop</a>, then add it here:</p>
+            <div class="add-favorite-form">
+                <input type="text" id="newFavStopId" placeholder="Stop ID (e.g., from browse page)">
+                <input type="text" id="newFavName" placeholder="Friendly Name (e.g., Home, Office)">
+                <button id="addFavoriteBtn">Save to Favorites</button>
+            </div>
+        </div>
+
+        <div id="favoritesList" class="favorites-container">
+            <!-- Favorites will be listed here -->
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
